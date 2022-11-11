@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "My very own calculator app.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afghani69/Calculator.git"
+  },
+  "author": "Eben Breytenbach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afghani69/Calculator/issues"
+  },
+  "homepage": "https://github.com/Afghani69/Calculator#readme",
+  "dependencies": {
+    "parcel": "^2.8.0"
+  }
+}
