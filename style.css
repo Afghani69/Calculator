@@ -42,7 +42,13 @@ body {
 }
 
 .screen-bottom {
-  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.operator,
+.number {
   font-size: 48px;
 }
 
@@ -75,7 +81,7 @@ body {
   transform: translateY(2px);
 }
 
-[data-operator="="] {
+[data-equals] {
   grid-column: -3 / span 2;
 }
 

@@ -11,18 +11,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Calculator</title>
   </head>
   <body>
     <div class="calculator">
       <div class="screen-container">
-        <div class="screen screen-top">123456789</div>
-        <div class="screen screen-bottom">987654321</div>
+        <div class="screen screen-top" data-previous-operand="">123456789</div>
+        <div class="screen screen-bottom" data-current-operand="">
+          <div class="operator">+</div>
+          <div class="number">987654321</div>
+        </div>
       </div>
       <div class="button-container">
-        <button class="btn" data-operator="clear-all">CE</button>
-        <button class="btn" data-operator="clear">C</button>
-        <button class="btn">
+        <button class="btn btn-clear" data-clear="clear">CE</button>
+        <button class="btn btn-clear-all" data-clear-all="clear-all">C</button>
+        <button class="btn btn-backspace">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -38,22 +42,22 @@
             />
           </svg>
         </button>
-        <button class="btn" data-value="9">9</button>
-        <button class="btn" data-value="8">8</button>
-        <button class="btn" data-value="7">7</button>
-        <button class="btn" data-value="6">6</button>
-        <button class="btn" data-value="5">5</button>
-        <button class="btn" data-value="4">4</button>
-        <button class="btn" data-value="3">3</button>
-        <button class="btn" data-value="2">2</button>
-        <button class="btn" data-value="1">1</button>
-        <button class="btn" data-value="0">0</button>
-        <button class="btn" data-value=".">.</button>
-        <button class="btn" data-operator="-">-</button>
-        <button class="btn" data-operator="*">*</button>
-        <button class="btn" data-operator="/">/</button>
-        <button class="btn" data-operator="+">+</button>
-        <button class="btn" data-operator="=">=</button>
+        <button class="btn btn-number" data-number>7</button>
+        <button class="btn btn-number" data-number>8</button>
+        <button class="btn btn-number" data-number>9</button>
+        <button class="btn btn-number" data-number>4</button>
+        <button class="btn btn-number" data-number>5</button>
+        <button class="btn btn-number" data-number>6</button>
+        <button class="btn btn-number" data-number>1</button>
+        <button class="btn btn-number" data-number>2</button>
+        <button class="btn btn-number" data-number>3</button>
+        <button class="btn btn-number" data-number>0</button>
+        <button class="btn btn-number" data-number>.</button>
+        <button class="btn btn-operator" data-operator="-">-</button>
+        <button class="btn btn-operator" data-operator="*">*</button>
+        <button class="btn btn-operator" data-operator="/">/</button>
+        <button class="btn btn-operator" data-operator="+">+</button>
+        <button class="btn btn-operator" data-equals="=">=</button>
       </div>
     </div>
   </body>
